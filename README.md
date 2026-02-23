@@ -1,11 +1,11 @@
-# 🚗 AutonomousNavigator
+#  AutonomousNavigator
 
 **AutonomousNavigator** is a modular ROS2-based framework designed for autonomous robot navigation.  
 It integrates **mapping**, **path planning**, and **exploration** modules to enable a robot to navigate autonomously in a simulated or real-world environment.
 
 ---
 
-## 🧭 Overview
+## Overview
 
 This repository provides a foundational navigation stack for autonomous robots built using **ROS2**.  
 It includes launch files, configuration parameters, and core Python scripts for mapping, SLAM, and navigation.  
@@ -13,18 +13,18 @@ The project is easily extendable and can be used for both **simulation (Gazebo)*
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🧩 Modular architecture with separate folders for launch, config, and source code  
-- 📡 Integration-ready with ROS2 Navigation2 stack  
-- 🗺️ Support for mapping and SLAM using configurable parameters  
-- 🚘 Autonomous exploration script for robot pathfinding  
-- 🧠 Easy configuration via YAML files  
-- 🧪 Unit testing included for maintainability  
+-  Modular architecture with separate folders for launch, config, and source code  
+-  Integration-ready with ROS2 Navigation2 stack  
+-  Support for mapping and SLAM using configurable parameters  
+-  Autonomous exploration script for robot pathfinding  
+-  Easy configuration via YAML files  
+-  Unit testing included for maintainability  
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 autonomousnavigator/
@@ -59,16 +59,16 @@ autonomousnavigator/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 
 ```bash
 git clone https://github.com/ShubhkarmanSingh7/autonomousnavigator.git
 cd autonomousnavigator
 ```
 
-### 2️⃣ Build the package
+### 2️ Build the package
 
 If you're using a ROS2 workspace:
 
@@ -85,21 +85,21 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+##  Usage
 
-### ▶️ Run the simulation
+###  Run the simulation
 
 ```bash
 ros2 launch autonomousnavigator start_simulation.launch.py
 ```
 
-### 🗺️ Run SLAM for mapping
+###  Run SLAM for mapping
 
 ```bash
 ros2 launch autonomousnavigator slam.launch.py
 ```
 
-### 🤖 Run autonomous exploration
+###  Run autonomous exploration
 
 ```bash
 ros2 run autonomousnavigator explorer
@@ -109,7 +109,7 @@ You can modify the robot and sensor configurations through the YAML files in the
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 Typical configuration file (example: `nav2_params.yaml`):
 
@@ -127,7 +127,7 @@ All parameters for simulation, SLAM, and navigation can be tuned in the `config/
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 This project includes ROS2 standard tests for:
 - Code style (flake8)
@@ -143,7 +143,7 @@ colcon test-result --verbose
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome!  
 Follow the steps below to contribute:
@@ -158,14 +158,14 @@ Please ensure your code is clean, documented, and passes tests.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**.  
 See the [LICENSE](LICENSE) file for full details.
 
 ---
 
-### 💡 Future Plans
+###  Future Plans
 
 - Add ROS2 Navigation2 + RViz integration  
 - Implement SLAM using RPLIDAR A1M8  
