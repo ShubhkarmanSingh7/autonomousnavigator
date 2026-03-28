@@ -23,11 +23,7 @@ class ExplorerNode(Node):
 
         # Action client for navigation
         self.nav_to_pose_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
-
-        # Visited frontiers set
         self.visited_frontiers = set()
-
-        # Map and position data
         self.map_data = None
         self.robot_position = (0, 0)  # (row, col) in map coordinates
 
@@ -67,7 +63,7 @@ class ExplorerNode(Node):
         goal_msg.header.stamp = self.get_clock().now().to_msg()
         goal_msg.pose.position.x = x
         goal_msg.pose.position.y = y
-        goal_msg.pose.orientation.w = 1.0  # Facing forward
+        goal_msg.pose.orientation.w = 1.0 
 
         nav_goal = NavigateToPose.Goal()
         nav_goal.pose = goal_msg
