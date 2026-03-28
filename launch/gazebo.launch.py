@@ -15,14 +15,13 @@ def generate_launch_description():
     # 3. Define the path to your world file
     world_file_path = os.path.join(pkg_autonomousnavigator, 'worlds', 'small_house.world')
 
-    # 4. Include the official Gazebo launch file
+    # 4. The official Gazebo launch file
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py')
         ),
         launch_arguments={
             'world': world_file_path,
-            # THIS IS THE CRUCIAL FIX:
             'extra_gazebo_args': '--ros-args -p use_sim_time:=true'
         }.items()
     )
